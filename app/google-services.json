@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "83158333827",
+    "firebase_url": "https://cc17-houserentalapp-default-rtdb.firebaseio.com",
+    "project_id": "cc17-houserentalapp",
+    "storage_bucket": "cc17-houserentalapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83158333827:android:4599faf8a0be022e4d9eb6",
+        "android_client_info": {
+          "package_name": "com.example.houserentalmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83158333827-8i4tta7edpg1s2g231fj2hkp3vunaro3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACx5vuq_8dtx06xWfY13qNhCYIqBhNENY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83158333827-8i4tta7edpg1s2g231fj2hkp3vunaro3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
