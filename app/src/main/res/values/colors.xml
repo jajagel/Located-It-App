@@ -13,14 +13,14 @@
     <color name="textColor2">#FF000000</color>
     <color name="light_blue">#2a54f4</color>
 
-    <color name="blue">#3500D3</color>
+    <color name="blue">#080808</color>
     <color name="grey">#808080</color>
     <color name="dark_grey">#2D2D2D</color>
     <color name="darker_grey">#080808</color>
 
     <color name="background2">#FFFFFFFF</color>
     <color name="background3">#808080</color>
-    <color name="background4">#2a54f4</color>
+    <color name="background4">#282128</color>
     <color name="background5">#ef0148</color>
     <color name="background6">#FFFFFFFF</color>
 

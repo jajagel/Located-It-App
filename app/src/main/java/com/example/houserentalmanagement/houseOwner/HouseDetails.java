@@ -6,17 +6,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.example.houserentalmanagement.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class HouseDetails extends AppCompatActivity {
 
     TextView tv_houseDesc;
     ImageView iv_houseImage;
-    Button btn_addMember, btn_viewMember, btn_viewLocation;
+    Button btn_addMember, btn_viewMember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +39,7 @@ public class HouseDetails extends AppCompatActivity {
         iv_houseImage = findViewById(R.id.iv_houseImage);
         btn_addMember = findViewById(R.id.btn_addMember);
         btn_viewMember = findViewById(R.id.btn_viewMember);
-        btn_viewLocation = findViewById(R.id.btn_viewLocation);
+
 
         tv_houseDesc.setText(houseDescription);
         Glide.with(HouseDetails.this).load(houseImage).into(iv_houseImage);
@@ -55,20 +58,7 @@ public class HouseDetails extends AppCompatActivity {
                 startActivity(intent1);
             }
         });
-        btn_viewLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(HouseDetails.this, ViewLocation.class);
-                intent1.putExtra("houseId", houseId);
-                intent1.putExtra("noOfRoom", noOfRoom);
-                intent1.putExtra("rentPerRoom", rentPerRoom);
-                intent1.putExtra("houseDescription", houseDescription);
-                intent1.putExtra("houseLocation", houseLocation);
-                intent1.putExtra("houseImage", houseImage);
-                intent1.putExtra("userId", userId);
-                startActivity(intent1);
-            }
-        });
+
         btn_viewMember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,6 +73,5 @@ public class HouseDetails extends AppCompatActivity {
                 startActivity(intent1);
             }
         });
-
     }
 }

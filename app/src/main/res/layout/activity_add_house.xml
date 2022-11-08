@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:text="Add Houses"
-                android:textColor="#03A9F4"
+                android:textColor="#a796b5"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
         android:layout_height="200dp"
         android:layout_below="@id/toolbar"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo" />
+        android:src="@drawable/houses" />
 
     <EditText
         android:id="@+id/et_houseId"
@@ -61,7 +61,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:hint="Enter Exact House Location"
+        android:hint="Enter House Location"
         android:textColor="@color/textColor"
         android:textSize="16sp" />
 
@@ -102,7 +102,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:hint="Facilities Available in house like AC, washing machine, kitchen etc"
+        android:hint="Facilities available in house like AC, washing machine, kitchen etc"
         android:lines="5"
         android:textColor="@color/textColor"
         android:textSize="16sp" />

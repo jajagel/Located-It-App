@@ -24,7 +24,7 @@ public class HouseDetails extends AppCompatActivity {
 
     TextView tv_houseDesc;
     ImageView iv_houseImage;
-    Button btn_viewMember, btn_viewLocation, btn_call, btn_message;
+    Button btn_viewMember, btn_call, btn_message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,6 @@ public class HouseDetails extends AppCompatActivity {
         iv_houseImage = findViewById(R.id.iv_houseImage);
 
         btn_viewMember = findViewById(R.id.btn_viewMember);
-        btn_viewLocation = findViewById(R.id.btn_viewLocation);
         btn_call = findViewById(R.id.btn_call);
         btn_message = findViewById(R.id.btn_message);
 
@@ -52,7 +51,7 @@ public class HouseDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:8950562633"));
+                intent.setData(Uri.parse("tel:09127434775"));
                 startActivity(intent);
             }
         });
@@ -62,7 +61,7 @@ public class HouseDetails extends AppCompatActivity {
             public void onClick(View v) {
                 Intent smsIntent = new Intent(Intent.ACTION_VIEW);
                 smsIntent.setType("vnd.android-dir/mms-sms");
-                smsIntent.putExtra("address", "8950562633");
+                smsIntent.putExtra("address", "09127434775");
                 smsIntent.putExtra("sms_body","Message");
                 startActivity(smsIntent);
 
@@ -72,20 +71,6 @@ public class HouseDetails extends AppCompatActivity {
         tv_houseDesc.setText(houseDescription);
         Glide.with(HouseDetails.this).load(houseImage).into(iv_houseImage);
 
-        btn_viewLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(HouseDetails.this, ViewLocation.class);
-                intent1.putExtra("houseId", houseId);
-                intent1.putExtra("noOfRoom", noOfRoom);
-                intent1.putExtra("rentPerRoom", rentPerRoom);
-                intent1.putExtra("houseDescription", houseDescription);
-                intent1.putExtra("houseLocation", houseLocation);
-                intent1.putExtra("houseImage", houseImage);
-                intent1.putExtra("userId", userId);
-                startActivity(intent1);
-            }
-        });
         btn_viewMember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

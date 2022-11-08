@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:text="See Member"
-                android:textColor="#03A9F4"
+                android:textColor="#a796b5"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
